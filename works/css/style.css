@@ -201,8 +201,12 @@ img {
 
 .works-img img {
   border: 1px solid #e6e6e6;
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 220px;
+  object-position: center;
+  display: block;
+  object-fit: contain;
+  background-color: #f7f7f7;
 }
 
 .works-name {
@@ -256,31 +260,48 @@ img {
 /*--------------------------------
  About
 ---------------------------------*/
+
 .profile {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  max-width: 900px;
   margin: 0 auto;
+  gap: 60px;
 }
+
 .profile-img {
-  width: 20%;
-  margin-right: 30px;
-  border-radius: 50%;
+  flex: 0 0 240px;
+  margin-right: 0;
 }
+
 .profile-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
+  border: 4px solid #f7f7f7;
 }
+
 .profile-body {
   flex: 1;
 }
 
 .profile-body p {
+  text-align: justify;
   font-size: 15px;
   line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.profile-body p:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .profile {
+    display: block;
+    text-align: center;
+  }
+  .profile-img {
+    width: 180px;
+    margin: 0 auto 30px;
+  }
 }
 
 /*--------------------------------

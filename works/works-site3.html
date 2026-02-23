@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MAHO SHIMADA ポートフォリオ">
+  <meta property="og:url" content="URL">
+  <meta property="og:description" content="MAHO SHIMADAのポートフォリオサイトです。">
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
+  <title>MAHO SHIMADA ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="canonical" href="URL">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">MAHO SHIMADA</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">D2Cブランドコンセプトサイト</h2>
+          <div class="article-body">
+            <p>
+              <img src="./img/works-site3.jpeg" alt="">
+            </p>
+            <p>
+              無機質なコンクリート空間に調和する、都市型観葉植物ブランド「BASIS」。インダストリアルな機能美と没入感のあるレイアウトを追求した架空プロジェクトサイトです。
+            </p>
+            <h3>URL</h3>
+            <p><a href="https://adjustacademy.com/0192/d250716-400192/site03/index.html" target="_blank" rel="noopener">VIEW SITE</a></p>
+            <h3>担当</h3>
+            <p>デザイン・コーディング</p>
+            <h3>サイトの目的</h3>
+            <p>「癒やし」ではなく「機能美」を訴求する観葉植物ブランド『BASIS』の認知拡大および、ターゲット層へのブランド体験の提供と購買獲得。</p>
+            <h3>ターゲット</h3>
+            <p>都市部で暮らす感度の高い20〜30代の男女。コンクリート打ちっぱなしの部屋に住み、ミニマルなファッションを好むような、既存の「ナチュラルな植物テイスト」にノイズを感じる層。（主にSNS広告からの流入を想定）</p>
+            <h3>デザインについて</h3>
+            <p>市場に溢れる「癒やし」とは一線を画す、「甘くない、媚びない」ブランド体験を目指しました。配色は都市の無機質さを想起させるダークグレー（#1A1A1A）を基調とし、アクセントカラーにネオングリーンを採用。これにより、商品である「植物の緑」が最も際立つコントラスト比を計算しています。また、タイポグラフィには工業的で構築的な形状を持つ「IBM Plex」を採用し、植物を「構造・システム」として捉えるブランドコンセプトを視覚的に体現しました。長文のコンセプトテキストは情緒的な詩ではなく「意思のあるマニフェスト」として読ませるため、あえて左揃えのレイアウトにし、視線が迷わず情報を取得できるよう視認性を高めています。</p>
+            <h3>コーディングについて</h3>
+            <p>
+                「都市と植物のレイヤーを再構築する」というコンセプトを、実装面やUXの設計でも表現しました。ファーストビューでは背景画像を固定するパララックス効果を実装し、スクロールに伴ってコンテンツが重なっていく没入感のある構造を作っています。最もこだわったプロダクト紹介セクションでは、ユーザーの読み飛ばしを防ぐため、スクロールに連動したUIをJavaScript（jQuery）で実装しました。左側の製品画像を固定し、右側のテキストのスクロール位置を判定して画像が自動で切り替わる仕様にしています。「スクロールする」という能動的な操作と情報の切り替わりを同期させることで、自然と商品説明に目が留まる導線を構築しました。あえてフェードなどの過剰なアニメーションを削ぎ落とし、瞬時に切り替わる挙動にすることで、ブランドのソリッドな世界観を強調しています。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;MAHO　SHIMADA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
